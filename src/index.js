@@ -28,7 +28,7 @@ app.use(middlewares.notFound); // not found one
 app.use(middlewares.errorHandler); // error handler
 
 //deciding port
-const PORT = process.env.APP_PORT || 3000;
+const PORT = process.env.APP_PORT || 3005;
 
 app.listen(PORT, () => {
     tracer.log(`Running a GraphQL API server at http://localhost:${PORT}${server.graphqlPath}`);
